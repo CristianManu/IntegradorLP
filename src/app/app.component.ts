@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Trabajo Integrador Lenguajes de Programacion';
+  title = 'Facultad de ciencias de la Administracion - UNER';
+  subtitle = 'Trabajo Integrador de Contenidos 2021 - Angular';
+  integrantes : string [] = [
+  "Cristian Manuel Lopez",
+  "Bautista Orge Perilli",
+  "Luciano Stipicevich"
+  ]
+
 }

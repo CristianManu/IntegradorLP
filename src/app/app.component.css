@@ -1,0 +1,26 @@
+body{
+    background-image: url("images/fondo.jpg");
+}
+
+div{
+
+}
+
+
+.titulo{
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.generador-aleatorio{
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.resultados{
+    display: block;
+    text-align: center;
+    color: white;
+}

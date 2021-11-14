@@ -6,13 +6,15 @@ import { GeneradorAleatorio } from './componentes/generador-aleatorio/generador-
 import { ItemsComponent } from './componentes/items/items.component';
 import { ItemComponent } from './componentes/item/item.component';
 import { FormsModule } from '@angular/forms';
+import { ResultadosComponent } from './componentes/resultados/resultados.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GeneradorAleatorio,
     ItemsComponent,
-    ItemComponent
+    ItemComponent,
+    ResultadosComponent
   ],
   imports: [
     BrowserModule,
