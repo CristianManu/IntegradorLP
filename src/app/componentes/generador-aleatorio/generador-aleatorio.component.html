@@ -1,0 +1,28 @@
+<form action="" (ngSubmit)="onSubmit()">
+    <h2>Generador de numeros Aleatorios</h2>
+    <div>
+        <label for="">Ingrese el rango minimo</label>
+        <input type="number" name="primernumero" [(ngModel)]="primernumero">
+    </div>
+    <div>
+        <label for="">Ingrese el rango maximo</label>
+        <input type="number" name="segundonumero" [(ngModel)]="segundonumero">
+    </div>
+    <div>
+        <label for="">Ingrese la cantidad de resultados</label>
+        <input type="number" name="cantresultados" [(ngModel)]="cantresultados">
+    </div>
+
+    <input type="submit" value="Generar">
+
+</form>
+
+
+<h1>Prueba componente Generador de numeros aleatorios</h1>
+<p>Primer numero : {{primernumero}}</p>
+<p>Segundo numero : {{segundonumero}} </p>
+<p>Numero aleatorio : {{resultados}}</p>
+
+<div *ngFor="let item of resultados; let i = index">
+{{i + 1}}{{item}}
+</div>
