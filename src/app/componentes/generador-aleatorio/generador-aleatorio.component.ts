@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
+import { ArgumentOutOfRangeError } from 'rxjs';
 
 @Component({
     selector: 'generador-aleatorio',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 
 export class GeneradorAleatorio{
+    @Output() excep = new EventEmitter<string>();
+
+    addNewExcep(value: string){
+        this.excep.emit(value);
+    }
 
     public primernumero: number = 0;
     public segundonumero: number = 0;
@@ -24,6 +30,11 @@ export class GeneradorAleatorio{
       }
 
     onSubmit(){
+        if (this.segundonumero <= this.primernumero) {
+            this.addNewExcep("El rango maximo no puede ser menor o igual que el minimo");
+        }else{
+            this.addNewExcep("");
+        
         this.numeroaleatorio = this.randomNumber(this.primernumero,this.segundonumero);
         var result : number [] = new Array(this.cantresultados);
         for (let index = 0; index < result.length; index++) {
@@ -31,6 +42,7 @@ export class GeneradorAleatorio{
         }
         this.resultados = result;
         console.log(this.primernumero, this.segundonumero, this.resultados, this.numeroaleatorio, this.cantresultados);
+        }
     }
 
 }

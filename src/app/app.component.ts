@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  errormsg : string = "";
   title = 'Facultad de ciencias de la Administracion - UNER';
   subtitle = 'Trabajo Integrador de Contenidos 2021 - Angular';
   integrantes : string [] = [
@@ -13,5 +14,9 @@ export class AppComponent {
   "Bautista Orge Perilli",
   "Luciano Stipicevich"
   ]
+
+  addExcep(excep: string){
+    this.errormsg = excep;
+  }
 
 }
