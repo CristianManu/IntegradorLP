@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { GeneradorAleatorio } from './componentes/generador-aleatorio/generador-aleatorio.component';
-import { ItemsComponent } from './componentes/items/items.component';
-import { ItemComponent } from './componentes/item/item.component';
 import { FormsModule } from '@angular/forms';
 import { ResultadosComponent } from './componentes/resultados/resultados.component';
 
@@ -12,8 +10,6 @@ import { ResultadosComponent } from './componentes/resultados/resultados.compone
   declarations: [
     AppComponent,
     GeneradorAleatorio,
-    ItemsComponent,
-    ItemComponent,
     ResultadosComponent
   ],
   imports: [

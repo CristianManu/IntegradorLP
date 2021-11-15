@@ -8,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResultadosComponent implements OnInit {
   @Input() item : number [] = new Array();
 
-  constructor() { }
-
   ngOnInit(): void {
   }
 

@@ -25,10 +25,23 @@ export class GeneradorAleatorio{
         console.log(this.primernumero, this.segundonumero, this.resultados, this.numeroaleatorio);
     }
 
+    /**
+     * Funcion randomNumber
+     * 
+     *  Funcion que devuelve un valor aleatorio entre dos numeros pasados como parametro
+     * 
+     * @param min 
+     * @param max 
+     * @returns un number redondeado.
+     */
     randomNumber(min : number, max : number) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
 
+    /**Funcion onSubmit 
+     * 
+     *  Esta funcion se encarga de realizar la logica de generacion de numeros aleatorios.
+     */
     onSubmit(){
         if (this.segundonumero <= this.primernumero) {
             this.addNewExcep("El rango maximo no puede ser menor o igual que el minimo");
